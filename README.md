@@ -6,7 +6,7 @@ A prototype that narrates exercise-video instructions in a voice matched to the 
 
 ```mermaid
 flowchart LR
-    P["Patient profile<br/>age 67 · female · ko"] --> B["Voice bucket<br/>ko:female:old"]
+    P["Patient profile<br/>age 67 · female · en"] --> B["Voice bucket<br/>en:female:old"]
     B --> S{"Voice selection"}
     S -->|1| M["voice_map.json<br/>(team-approved voices)"]
     S -->|2| C[".cache<br/>(previously picked voice)"]
@@ -14,7 +14,7 @@ flowchart LR
     S -->|4| D["Default voice"]
     S --> T["TTS<br/>(description text → mp3, cached)"]
     T --> F["ffmpeg mix<br/>duck background audio, add narration"]
-    F --> O["output/…/ko_female_old.mp4"]
+    F --> O["output/…/en_female_old.mp4"]
 ```
 
 1. **Profile → bucket**: Age is grouped into `young` (<35) / `middle_aged` (35–59) / `old` (60+). The bucket names match the ElevenLabs Voice Library `age` filter values.
@@ -65,13 +65,13 @@ Run all commands from the repository root.
 **See which voice a patient would get** (includes a preview URL)
 
 ```bash
-voicedub voice --age 67 --gender female --lang ko
+voicedub voice --age 67 --gender female --lang en
 ```
 
 **Dub a video for one patient**
 
 ```bash
-voicedub dub --exercise glute_bridge --age 67 --gender female --lang ko
+voicedub dub --exercise glute_bridge --age 67 --gender female --lang en
 ```
 
 Options: `--video PATH` (use a specific video), `--replace-audio` (drop the original audio), `--lead-in 1.0`, `--no-fit` (no speed adjustment), `--gender other --fallback-gender male`
@@ -79,7 +79,7 @@ Options: `--video PATH` (use a specific video), `--replace-audio` (drop the orig
 **Pre-render every bucket**
 
 ```bash
-voicedub prerender --langs ko,en,ja
+voicedub prerender --langs en,ja
 ```
 
 **User-testing demo**: Generates audio only (MP3, no video) so you can compare the personalized voice with the default voice side by side and download both.
@@ -103,7 +103,7 @@ pytest
 ## Limitations and next steps
 
 - **Voice ≠ person**: Only the voice changes for now. Matching the on-screen person too would need per-bucket instructor footage or avatars. This prototype's goal is to first check whether voice alone makes a difference.
-- **Uneven Voice Library coverage**: Some combinations (e.g. older Korean voices) have few options and may fall back to the `any_age` / `any_language` levels. Check `source` in the output. ElevenLabs Voice Design (creating a voice from a text description, e.g. "a calm Korean woman in her 60s") is worth exploring as an alternative.
+- **Uneven Voice Library coverage**: Some combinations (e.g. older voices in less common languages) have few options and may fall back to the `any_age` / `any_language` levels. Check `source` in the output. ElevenLabs Voice Design (creating a voice from a text description, e.g. "a calm woman in her 60s") is worth exploring as an alternative.
 - **Medical term pronunciation**: Anatomy and exercise terms may be mispronounced, so listen to every clip before shipping.
 - **Licensing**: Check the commercial-use terms for Voice Library voices (plan requirements, per-voice rates).
 - **Disclosure**: Decide how the app will tell patients the voice is AI-generated.
