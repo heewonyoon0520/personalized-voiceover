@@ -1,0 +1,21 @@
+{
+  "_comment": "Voices the clinical/content team has listened to and approved. Keys are language:gender:age_band (age bands: young <35, middle_aged 35-59, old 60+). Leave a value empty to let voicedub search the ElevenLabs Voice Library. Find voice ids in the ElevenLabs dashboard or via `voicedub voice ...`.",
+  "defaults": {
+    "female": "",
+    "male": ""
+  },
+  "buckets": {
+    "ko:female:young": "",
+    "ko:female:middle_aged": "",
+    "ko:female:old": "",
+    "ko:male:young": "",
+    "ko:male:middle_aged": "",
+    "ko:male:old": "",
+    "en:female:young": "",
+    "en:female:middle_aged": "",
+    "en:female:old": "",
+    "en:male:young": "",
+    "en:male:middle_aged": "",
+    "en:male:old": ""
+  }
+}

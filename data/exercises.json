@@ -1,0 +1,35 @@
+{
+  "_comment": "Sample catalog. Replace descriptions with the localized copy from the app; put videos under videos/ (git-ignored).",
+  "exercises": [
+    {
+      "id": "glute_bridge",
+      "video": "videos/glute_bridge.mp4",
+      "title": {"ko": "브릿지", "en": "Glute Bridge", "ja": "ブリッジ"},
+      "description": {
+        "ko": "바닥에 누워 무릎을 세우고 발은 골반 너비로 벌려주세요. 숨을 내쉬면서 엉덩이를 천천히 들어 올려 어깨부터 무릎까지 일직선을 만듭니다. 2초간 멈춘 뒤 천천히 내려오세요. 허리가 아프면 높이를 조금 낮춰도 괜찮아요.",
+        "en": "Lie on your back with your knees bent and feet hip-width apart. Breathe out and slowly lift your hips until your shoulders, hips and knees form a straight line. Hold for two seconds, then lower slowly. If your lower back hurts, it's fine to lift a little less.",
+        "ja": "仰向けに寝て膝を立て、足を腰幅に開きます。息を吐きながらゆっくりお尻を持ち上げ、肩から膝まで一直線にします。2秒キープしたら、ゆっくり下ろしましょう。腰が痛む場合は、少し低めでも大丈夫です。"
+      }
+    },
+    {
+      "id": "cat_cow",
+      "video": "videos/cat_cow.mp4",
+      "title": {"ko": "고양이-소 자세", "en": "Cat-Cow", "ja": "キャット＆カウ"},
+      "description": {
+        "ko": "손과 무릎을 바닥에 대고 엎드려 주세요. 숨을 내쉬며 등을 둥글게 말아 배꼽을 바라보고, 숨을 들이쉬며 가슴을 열고 시선을 앞으로 보냅니다. 통증이 없는 범위에서 천천히 반복하세요.",
+        "en": "Start on your hands and knees. Breathe out as you round your back and look toward your belly button. Breathe in as you open your chest and look forward. Repeat slowly, staying within a pain-free range.",
+        "ja": "四つ這いになります。息を吐きながら背中を丸めておへそを見て、息を吸いながら胸を開いて前を見ます。痛みのない範囲で、ゆっくり繰り返しましょう。"
+      }
+    },
+    {
+      "id": "seated_knee_extension",
+      "video": "videos/seated_knee_extension.mp4",
+      "title": {"ko": "앉아서 무릎 펴기", "en": "Seated Knee Extension", "ja": "座って膝伸ばし"},
+      "description": {
+        "ko": "의자에 등을 기대고 바르게 앉아주세요. 한쪽 무릎을 천천히 펴서 다리를 앞으로 곧게 뻗고, 허벅지 앞쪽에 힘이 들어가는 것을 느껴보세요. 3초간 유지한 뒤 천천히 내려놓습니다.",
+        "en": "Sit upright with your back against the chair. Slowly straighten one knee until your leg is extended in front of you, and feel the muscles on the front of your thigh working. Hold for three seconds, then lower it slowly.",
+        "ja": "椅子に背中をつけて、まっすぐ座ります。片方の膝をゆっくり伸ばして脚を前にまっすぐ伸ばし、太ももの前側に力が入るのを感じましょう。3秒キープしてから、ゆっくり下ろします。"
+      }
+    }
+  ]
+}

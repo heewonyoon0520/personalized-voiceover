@@ -1,0 +1,16 @@
+# secrets
+.env
+
+# generated
+.cache/
+output/
+videos/*
+!videos/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+.DS_Store

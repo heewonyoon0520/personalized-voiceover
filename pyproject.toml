@@ -1,0 +1,27 @@
+[project]
+name = "voicedub"
+version = "0.1.0"
+description = "Personalized narration for exercise videos, matched to patient age, gender and language (ElevenLabs)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+demo = ["streamlit>=1.35"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+voicedub = "voicedub.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
